@@ -7,6 +7,9 @@ AUTHOR<br>
 Travis Ridge
 
 VERSION HISTORY<br>
+v0.2.3 - 23/03/14<br>
+* Removed random names pending export fix<br>
+
 v0.2.2 - 21/03/14<br>
 * Various fixes<br>
 * Publish to GitHub<br>

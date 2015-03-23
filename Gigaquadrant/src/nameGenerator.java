@@ -28,6 +28,7 @@ public class nameGenerator {
 			Scanner sc = new Scanner(file);
 			while(sc.hasNext()){
 				String word = sc.next();
+				System.out.println(word);
 				//System.out.println(word);
 				word = word.toLowerCase();
 				int i;
