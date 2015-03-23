@@ -161,21 +161,21 @@ public class Main extends JPanel{
 		
 		//generate planet name lists
 		//source file for letter pairs
-		//File file = new File("res/Space.txt");
-		//nameGenerator generator = new nameGenerator(file);
+		File file = new File("Space.txt");
+		nameGenerator generator = new nameGenerator(file);
 		for(int i = 0; i < starCount; i++){
 			//name for uninhabited planets
 			starNames[i][0] = "RS-" + (stars[i].x*1000 + stars[i].y);
 			//name for planet by each faction
 			for(int j = 1; j <= factions; j++){
-				String name = "RS-" + (stars[i].x*1000 + stars[i].y);
-				/*boolean copy = false;
+				//String name = "RS-" + (stars[i].x*1000 + stars[i].y);
+				boolean copy = false;
 				String name = "";
 				while((name.length() < 4 || name.length() > 20) && !copy){
 					name = generator.generate();
 					//avoids duplicate names within a faction
 					copy = duplicate(i,j,name);
-				}*/
+				}
 				starNames[i][j] = name;
 			}
 		}
